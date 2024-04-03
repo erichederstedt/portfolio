@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://onkeldolf.github.io/portfolio/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://onkeldolf.github.io/portfolio/</loc>
+</url>
+<url>
+<loc>https://onkeldolf.github.io/portfolio/about.html</loc>
+<lastmod>2024-04-03T09:44:54+02:00</lastmod>
+</url>
+<url>
+<loc>https://onkeldolf.github.io/portfolio/static-global-illumination.html</loc>
+<lastmod>2024-03-20T18:18:45+01:00</lastmod>
+</url>
+<url>
+<loc>https://onkeldolf.github.io/portfolio/tga-project-5-laboratoriya-the-laboratory.html</loc>
+<lastmod>2024-03-20T18:18:10+01:00</lastmod>
+</url>
+<url>
+<loc>https://onkeldolf.github.io/portfolio/tga-project-6-spite-string-of-fate.html</loc>
+<lastmod>2024-03-20T18:18:27+01:00</lastmod>
+</url>
+<url>
+<loc>https://onkeldolf.github.io/portfolio/tga-project-7-streamer-attacked-by-aliens.html</loc>
+<lastmod>2024-03-20T18:18:30+01:00</lastmod>
+</url>
+</urlset>
