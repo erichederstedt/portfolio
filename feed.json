@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://onkeldolf.github.io/portfolio/about-2.html",
+            "url": "https://onkeldolf.github.io/portfolio/about-2.html",
+            "title": "About",
+            "summary": "My name is Eric Hederstedt, and I am a passionate programming student at The Game Assembly, pursuing a career in rendering engineering. I have been programming on and off since I was 13, working on my own game engine since the age of 17. Additionally,&hellip;",
+            "content_html": "<p>My name is Eric Hederstedt, and I am a passionate programming student at The Game Assembly, pursuing a career in rendering engineering. I have been programming on and off since I was 13, working on my own game engine since the age of 17. Additionally, I have been an active member of the Arma 3 modding community, primarily as a scripting and config modder, with one of my mods having a total of 14,000 active subscribers.<br><br>What drew me to the field of game development, and specifically rendering engineering, was the challenge it presents. Game programming combines the difficulties faced by various other industries, such as handling massive amounts of data, rendering incredible worlds, and building secure and safe systems, all while ensuring high performance and speed. This is why I chose to specialize in rendering engineering – I have always enjoyed working with low-level APIs and building performant software, and graphics programming is a sub-discipline that aligns perfectly with these interests.<br><br>So far, I have particularly enjoyed working with APIs and building rendering systems. Currently, I am leading my team's efforts in developing our next renderer using DirectX 12. However, I also find great satisfaction in implementing rendering techniques, such as ray-marched volumetric lighting or light probe-based static global illumination with spherical harmonics.</p>\n<p> </p>\n<h1 class=\"align-center\">Contact</h1>\n<p>Phone: 073-956 74 04<br>Email: <a href=\"mailto:eric.jonsson.hederstedt@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">eric.jonsson.hederstedt@gmail.com</a><br>Location: Stockholm, Sweden<br>Linkedin: <a href=\"https://www.linkedin.com/in/eric-hederstedt-jonsson-197832214/\" target=\"_blank\" rel=\"noopener noreferrer\">Eric Hederstedt</a> </p>",
+            "author": {
+                "name": "Eric Hederstedt"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-04-08T17:54:49+02:00",
+            "date_modified": "2024-04-08T17:59:31+02:00"
+        },
+        {
             "id": "https://onkeldolf.github.io/portfolio/global-illumination.html",
             "url": "https://onkeldolf.github.io/portfolio/global-illumination.html",
             "title": "Global Illumination",
@@ -23,20 +37,6 @@
             ],
             "date_published": "2024-04-03T15:46:08+02:00",
             "date_modified": "2024-04-03T19:58:00+02:00"
-        },
-        {
-            "id": "https://onkeldolf.github.io/portfolio/about.html",
-            "url": "https://onkeldolf.github.io/portfolio/about.html",
-            "title": "About",
-            "summary": "My name is Eric Hederstedt, and I am a passionate programming student at The Game Assembly, pursuing a career in rendering engineering. I have been programming on and off since I was 13, working on my own game engine since the age of 17. Additionally,&hellip;",
-            "content_html": "\n  <p>\n    My name is Eric Hederstedt, and I am a passionate programming student at The Game Assembly, pursuing a career in rendering engineering. I have been programming on and off since I was 13, working on my own game engine since the age of 17. Additionally, I have been an active member of the Arma 3 modding community, primarily as a scripting and config modder, with one of my mods having a total of 14,000 active subscribers.\n<br>\n<br>What drew me to the field of game development, and specifically rendering engineering, was the challenge it presents. Game programming combines the difficulties faced by various other industries, such as handling massive amounts of data, rendering incredible worlds, and building secure and safe systems, all while ensuring high performance and speed. This is why I chose to specialize in rendering engineering – I have always enjoyed working with low-level APIs and building performant software, and graphics programming is a sub-discipline that aligns perfectly with these interests.\n<br>\n<br>So far, I have particularly enjoyed working with APIs and building rendering systems. Currently, I am leading my team's efforts in developing our next renderer using DirectX 12. However, I also find great satisfaction in implementing rendering techniques, such as ray-marched volumetric lighting or light probe-based static global illumination with spherical harmonics.\n  </p>",
-            "author": {
-                "name": "Eric Hederstedt"
-            },
-            "tags": [
-            ],
-            "date_published": "2024-03-20T18:27:20+01:00",
-            "date_modified": "2024-04-03T09:44:54+02:00"
         },
         {
             "id": "https://onkeldolf.github.io/portfolio/tga-project-7-streamer-attacked-by-aliens.html",
