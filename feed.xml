@@ -3,7 +3,7 @@
     <title>Eric Hederstedt</title>
     <link href="https://onkeldolf.github.io/portfolio/feed.xml" rel="self" />
     <link href="https://onkeldolf.github.io/portfolio" />
-    <updated>2024-04-03T19:58:00+02:00</updated>
+    <updated>2024-04-08T17:46:33+02:00</updated>
     <author>
         <name>Eric Hederstedt</name>
     </author>
@@ -222,10 +222,41 @@ return lerp(color_4, color_5, back_to_front_weight);</code></pre>
         </author>
         <link href="https://onkeldolf.github.io/portfolio/tga-project-7-streamer-attacked-by-aliens.html"/>
         <id>https://onkeldolf.github.io/portfolio/tga-project-7-streamer-attacked-by-aliens.html</id>
+        <media:content url="https://onkeldolf.github.io/portfolio/media/posts/4/Launcher_Retail_iBj8GcNcG9-3.jpg" medium="image" />
 
-        <updated>2024-03-20T18:18:30+01:00</updated>
-            <summary></summary>
-        <content></content>
+        <updated>2024-04-08T17:46:33+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://onkeldolf.github.io/portfolio/media/posts/4/Launcher_Retail_iBj8GcNcG9-3.jpg" alt="" />
+                    In this project, I continued to expand and enhance the TEMP Engine, our custom in-house engine, to create a FPS Zombie-Survival game with advanced rendering techniques and optimized performance. My key contributions to the project included:
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://onkeldolf.github.io/portfolio/media/posts/4/Launcher_Retail_iBj8GcNcG9-3.jpg" class="type:primaryImage" alt="" /></p>
+                <p> </p>
+<ul>
+<li>Genre: FPS Zombie-Survival</li>
+<li>Engine: TEMP Engine(Custom in-house engine)</li>
+</ul>
+<h4>Overview</h4>
+<p>In this project, I continued to expand and enhance the TEMP Engine, our custom in-house engine, to create a FPS Zombie-Survival game with advanced rendering techniques and optimized performance.</p>
+<p>My key contributions to the project included:</p>
+<ul>
+<li>Architecting and implementing a robust component system to facilitate modular game object composition</li>
+<li>Developing a scene serialization system to efficiently save and load game states</li>
+<li>Implementing a well-threaded Direct3D 12 renderer to leverage modern GPU capabilities and improve rendering performance</li>
+<li>Creating a threaded resource streaming system to optimize memory usage and loading times</li>
+<li>Implementing static global illumination to enhance the visual quality and realism of the game world</li>
+<li>Developing a signed distance field (SDF) text and glyph rendering system for crisp and efficient UI rendering</li>
+</ul>
+<h4>Screenshots</h4>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/4/Launcher_Retail_iBj8GcNcG9-2.jpg" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_iBj8GcNcG9-2-xs.jpg 300w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_iBj8GcNcG9-2-sm.jpg 480w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_iBj8GcNcG9-2-md.jpg 768w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_iBj8GcNcG9-2-lg.jpg 1024w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_iBj8GcNcG9-2-xl.jpg 1360w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_iBj8GcNcG9-2-2xl.jpg 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/4/Launcher_Retail_5hb8ddFDtA.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_5hb8ddFDtA-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_5hb8ddFDtA-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_5hb8ddFDtA-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_5hb8ddFDtA-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_5hb8ddFDtA-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_5hb8ddFDtA-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/4/Launcher_Retail_GlsYgZc3SM.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_GlsYgZc3SM-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_GlsYgZc3SM-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_GlsYgZc3SM-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_GlsYgZc3SM-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_GlsYgZc3SM-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/4/responsive/Launcher_Retail_GlsYgZc3SM-2xl.png 1600w"></figure>
+<p><img loading="lazy" src="file:///C:/Users/eric.hederstedtjons/AppData/Local/Packages/Microsoft.Windows.Photos_8wekyb3d8bbwe/TempState/ShareServiceTempFolder/Launcher_Retail_mwiZOCsCH4.jpeg" data-is-external-image="true"></p>
+            ]]>
+        </content>
     </entry>
     <entry>
         <title>TGA Project 6: “Spite: String of Fate”</title>
@@ -234,10 +265,39 @@ return lerp(color_4, color_5, back_to_front_weight);</code></pre>
         </author>
         <link href="https://onkeldolf.github.io/portfolio/tga-project-6-spite-string-of-fate.html"/>
         <id>https://onkeldolf.github.io/portfolio/tga-project-6-spite-string-of-fate.html</id>
+        <media:content url="https://onkeldolf.github.io/portfolio/media/posts/3/GameLogo.png" medium="image" />
 
-        <updated>2024-03-20T18:18:27+01:00</updated>
-            <summary></summary>
-        <content></content>
+        <updated>2024-04-08T17:39:14+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://onkeldolf.github.io/portfolio/media/posts/3/GameLogo.png" alt="" />
+                    Genre: Top-down action-rpg Engine: TEMP Engine(Custom in-house engine) Overview In this project, I worked on expanding the capabilities of the TEMP Engine, our custom in-house engine, to develop a top-down action RPG game. My key contributions to the project included: Enhancing the Direct3D 11 renderer&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://onkeldolf.github.io/portfolio/media/posts/3/GameLogo.png" class="type:primaryImage" alt="" /></p>
+                <div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/iWzmmPTuMpU?si=UFyg8wtIVZK-8kA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div>
+<ul>
+<li>Genre: Top-down action-rpg</li>
+<li>Engine: TEMP Engine(Custom in-house engine)</li>
+</ul>
+<h4>Overview</h4>
+<p>In this project, I worked on expanding the capabilities of the TEMP Engine, our custom in-house engine, to develop a top-down action RPG game.</p>
+<p>My key contributions to the project included:</p>
+<ul>
+<li>Enhancing the Direct3D 11 renderer</li>
+<li>Implementing a GPU-based particle system</li>
+<li>Developing an additive animation system</li>
+</ul>
+<h4>Screenshots</h4>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/3/screenshot1.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot1-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot1-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot1-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot1-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot1-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot1-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/3/screenshot2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot2-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot2-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot2-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot2-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot2-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot2-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/3/screenshot3.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot3-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot3-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot3-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot3-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot3-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot3-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/3/screenshot4.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot4-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot4-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot4-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot4-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot4-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot4-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/3/screenshot5.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot5-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot5-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot5-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot5-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot5-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/3/responsive/screenshot5-2xl.png 1600w"></figure>
+            ]]>
+        </content>
     </entry>
     <entry>
         <title>TGA Project 5: “Лаборатория (The Laboratory)”</title>
@@ -246,16 +306,36 @@ return lerp(color_4, color_5, back_to_front_weight);</code></pre>
         </author>
         <link href="https://onkeldolf.github.io/portfolio/tga-project-5-laboratoriya-the-laboratory.html"/>
         <id>https://onkeldolf.github.io/portfolio/tga-project-5-laboratoriya-the-laboratory.html</id>
+        <media:content url="https://onkeldolf.github.io/portfolio/media/posts/2/t_mainMenuBackground.png" medium="image" />
 
-        <updated>2024-03-20T18:18:10+01:00</updated>
+        <updated>2024-04-08T17:38:32+02:00</updated>
             <summary>
                 <![CDATA[
-                    In this project ...
+                        <img src="https://onkeldolf.github.io/portfolio/media/posts/2/t_mainMenuBackground.png" alt="" />
+                    Genre: Grid-based puzzle fps Engine: TEMP Engine(Custom in-house engine) Overview In this project, I worked with a team to create a grid-based puzzle FPS game using our custom in-house engine, the TEMP Engine. The engine is an extension of a previous engine I had developed&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>In this project ...</p>
+                    <p><img src="https://onkeldolf.github.io/portfolio/media/posts/2/t_mainMenuBackground.png" class="type:primaryImage" alt="" /></p>
+                <p class="align-center"><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Jq8W_vcEqV8?si=S_2SCa_s1r2xJVHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div>
+<ul>
+<li>Genre: Grid-based puzzle fps</li>
+<li>Engine: TEMP Engine(Custom in-house engine)</li>
+</ul>
+<h4>Overview</h4>
+<p>In this project, I worked with a team to create a grid-based puzzle FPS game using our custom in-house engine, the TEMP Engine. The engine is an extension of a previous engine I had developed during a game jam, which was extensively reworked and improved for this project.</p>
+<p>My contributions to the project included:</p>
+<ul>
+<li>Designing and implementing the overall engine framework</li>
+<li>Developing the renderer</li>
+</ul>
+<h4>Screenshots</h4>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/2/screenshot1.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot1-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot1-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot1-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot1-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot1-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot1-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/2/screenshot2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot2-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot2-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot2-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot2-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot2-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot2-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/2/screenshot3.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot3-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot3-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot3-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot3-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot3-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot3-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/2/screenshot4.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot4-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot4-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot4-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot4-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot4-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot4-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://onkeldolf.github.io/portfolio/media/posts/2/screenshot5.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot5-xs.png 300w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot5-sm.png 480w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot5-md.png 768w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot5-lg.png 1024w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot5-xl.png 1360w ,https://onkeldolf.github.io/portfolio/media/posts/2/responsive/screenshot5-2xl.png 1600w"></figure>
             ]]>
         </content>
     </entry>
