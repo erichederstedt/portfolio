@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>erichederstedt.dev</title>
+    <link href="https://erichederstedt.dev/feed.xml" rel="self" />
+    <link href="https://erichederstedt.dev" />
+    <updated>2024-05-20T15:47:17+02:00</updated>
+    <author>
+        <name>Eric Hederstedt</name>
+    </author>
+    <id>https://erichederstedt.dev</id>
+
+    <entry>
+        <title>DirectX 12 Renderer</title>
+        <author>
+            <name>Eric Hederstedt</name>
+        </author>
+        <link href="https://erichederstedt.dev/dx12-renderer.html"/>
+        <id>https://erichederstedt.dev/dx12-renderer.html</id>
+
+        <updated>2024-05-20T14:28:48+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Overview The purpose of this project was to implement a new, modern, more maintainable, and more scalable renderer from scratch using DirectX 12. The goal was to create a well-threaded renderer that utilizes a render graph architecture, incorporates an automatic streaming system, and delivers high&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div class="post__toc">
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#mcetoc_1hqvdsa0k15s">Overview</a></li>
+<li><a href="#mcetoc_1hqvdsa0k15t">Results</a></li>
+</ul>
+</div>
+<h1 id="mcetoc_1hub42o6f9"></h1>
+<h1 id="mcetoc_1hqvdsa0k15s">Overview</h1>
+<p>The purpose of this project was to implement a new, modern, more maintainable, and more scalable renderer from scratch using DirectX 12. The goal was to create a well-threaded renderer that utilizes a render graph architecture, incorporates an automatic streaming system, and delivers high performance. Additionally, the renderer was designed to employ clustered forward rendering techniques and an updated <a href="https://blog.selfshadow.com/publications/s2015-shading-course/burley/s2015_pbs_disney_bsdf_slides.pdf" target="_blank" rel="noopener noreferrer"><em>Disney BSDF</em></a> PBR model.<br><br>The decision to choose DirectX 12, one of the more advanced graphics APIs, was driven by the desire to leverage specific features such as dynamic indexing and unbound arrays. These features were notably absent in DirectX 11 and only partially supported in OpenGL through the <a href="https://registry.khronos.org/OpenGL/extensions/ARB/ARB_bindless_texture.txt"><em>ARB_bindless_texture</em></a> extension. Having previous experience with implementing a Vulkan renderer, I decided to explore and gain expertise with DirectX 12 for this project.</p>
+<h1 id="mcetoc_1hqvdsa0k15t">Results</h1>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/6/renderer-design.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/6/responsive/renderer-design-xs.png 300w ,https://erichederstedt.dev/media/posts/6/responsive/renderer-design-sm.png 480w ,https://erichederstedt.dev/media/posts/6/responsive/renderer-design-md.png 768w ,https://erichederstedt.dev/media/posts/6/responsive/renderer-design-lg.png 1024w ,https://erichederstedt.dev/media/posts/6/responsive/renderer-design-xl.png 1360w ,https://erichederstedt.dev/media/posts/6/responsive/renderer-design-2xl.png 1600w"></figure>
+<p>The basic design I ended up with was this. My main goal was to keep the "public" interfaces used by the rest of the engine/game simple and concise. I also followed the HLR-LLR renderer design pattern as I've had good experiences with it previously. The jist of the design partern is that you have a LLR which is a light-weight abstraction layer ontop of a rendering API(DirectX 12 in this case) and a HLR which then uses that LLR to implement more higher level things.</p>
+<p><video loading="lazy" width="100%" height="auto" controls="controls"><source src="media/files/Game Debug Vknfc3cie2.webm" type="video/webm" /></video></p>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/6/Game_Debug_CkDiJOLAIs.png" alt="" width="1264" height="681" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/6/responsive/Game_Debug_CkDiJOLAIs-xs.png 300w ,https://erichederstedt.dev/media/posts/6/responsive/Game_Debug_CkDiJOLAIs-sm.png 480w ,https://erichederstedt.dev/media/posts/6/responsive/Game_Debug_CkDiJOLAIs-md.png 768w ,https://erichederstedt.dev/media/posts/6/responsive/Game_Debug_CkDiJOLAIs-lg.png 1024w ,https://erichederstedt.dev/media/posts/6/responsive/Game_Debug_CkDiJOLAIs-xl.png 1360w ,https://erichederstedt.dev/media/posts/6/responsive/Game_Debug_CkDiJOLAIs-2xl.png 1600w"></figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Global Illumination</title>
+        <author>
+            <name>Eric Hederstedt</name>
+        </author>
+        <link href="https://erichederstedt.dev/global-illumination.html"/>
+        <id>https://erichederstedt.dev/global-illumination.html</id>
+
+        <updated>2024-04-26T13:49:46+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Overview The main goal of this project was to improve the lighting quality in our game engine by adding a source of indirect global illumination. Realistic lighting is a crucial aspect of creating immersive and visually appealing virtual environments, and global illumination (GI) plays a&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="mcetoc_1hsd5d9k29f"></h2>
+<div class="post__toc">
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#mcetoc_1hqvdsa0k15s">Overview</a></li>
+<li><a href="#mcetoc_1hqvdsa0k15t">Results</a></li>
+<li><a href="#mcetoc_1hqvdsa0k15u">Techical Implementation</a></li>
+</ul>
+</div>
+<h1 id="mcetoc_1hqvdsa0k15s">Overview</h1>
+<p>The main goal of this project was to improve the lighting quality in our game engine by adding a source of indirect global illumination. Realistic lighting is a crucial aspect of creating immersive and visually appealing virtual environments, and global illumination (GI) plays a significant role in achieving this. GI simulates the way light bounces and reflects off surfaces, creating indirect lighting effects that contribute to the overall realism and atmosphere of a scene.<br><br>The GI method I chose to implement was grid-placed light probes containing order 3 spherical harmonic coefficients. This approach is a classic and practical way of approximating global illumination, as it strikes a balance between visual quality and performance. Light probes are strategically placed throughout the scene, capturing and encoding the incident lighting information using spherical harmonics, a mathematical representation that allows for efficient storage and interpolation of lighting data.<br><br>By incorporating this technique into our engine, we aimed to enhance the visual fidelity of our scenes, creating more realistic and natural-looking lighting conditions that better mimic the behaviour of light in the real world.</p>
+<h1 id="mcetoc_1hqvdsa0k15t">Results</h1>
+<p>Here is a showcase of some test scenes, with and without global illumination enabled:</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://erichederstedt.dev/media/posts/4/gallery/gi_1.png" data-size="1920x1080"><img loading="lazy" src="https://erichederstedt.dev/media/posts/4/gallery/gi_1-thumbnail.png" alt="" width="720" height="405"></a>
+<figcaption>Without Global Illumination</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://erichederstedt.dev/media/posts/4/gallery/gi_2.png" data-size="1920x1080"><img loading="lazy" src="https://erichederstedt.dev/media/posts/4/gallery/gi_2-thumbnail.png" alt="" width="720" height="405"></a>
+<figcaption>With Global Illumination</figcaption>
+</figure>
+</div></div>
+<p>In this Cornell box scene, the impact of global illumination is clearly visible. Without GI, the objects appear flat and lack the color bleeding effects that occur when light bounces off colored surfaces. With GI enabled, the red and green walls cast a tint on the nearby objects, creating a more realistic and visually pleasing result. The added indirect lighting helps to soften shadows and enhance the overall sense of depth and dimensionality in the scene.</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://erichederstedt.dev/media/posts/4/gallery/gi_4-2.png" data-size="1920x1080"><img loading="lazy" src="https://erichederstedt.dev/media/posts/4/gallery/gi_4-2-thumbnail.png" alt="" width="720" height="405"></a>
+<figcaption>Without Global Illumination</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://erichederstedt.dev/media/posts/4/gallery/gi_3-2.png" data-size="1920x1080"><img loading="lazy" src="https://erichederstedt.dev/media/posts/4/gallery/gi_3-2-thumbnail.png" alt="" width="720" height="405"></a>
+<figcaption>With Global Illumination</figcaption>
+</figure>
+</div></div>
+<p>The box scene with a top opening demonstrates the importance of indirect lighting in enclosed environments. Without GI, only the areas directly exposed to the light source are illuminated, leaving the rest of the interior in complete darkness. With GI enabled, the light entering through the opening bounces off the interior surfaces, spreading illumination to areas that are not in direct line of sight of the light source. This creates a more realistic and natural-looking result, as it mimics how light behaves in real-world enclosed spaces, enhancing the overall sense of depth and realism in the scene.</p>
+<p>Performance-wise, this method of implementing global illumination is relatively cheap in terms of runtime overhead, as the precomputed lighting data can be efficiently accessed and interpolated during rendering.</p>
+<h1 id="mcetoc_1hqvdsa0k15u">Techical Implementation</h1>
+<p>The process of baking a light probe could be broken down into a 3 step process:</p>
+<ul>
+<li>Render the scene into a cube map as our radiance map.</li>
+<li>Convert the radiance map to a irradiance map.</li>
+<li>Project the irradiance map into spherical harmonic values.</li>
+</ul>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">In total I ended up with this function:</span></p>
+<pre class="language-cpp"><code>void Light_Probe_Manager::update_probe(int index, std::function&lt;void(Cube_Map_Render_Target*)&gt; render_func)
+{
+    Light_Probe&amp; light_probe = light_probes[index];
+
+    cube_map_radiance_target.SetPosition(light_probe.position);
+
+    render_func(&amp;cube_map_radiance_target);
+
+    CubeMapRenderTarget* cube_map = &amp;cube_map_radiance_target;
+#if ENABLE_IRRADIANCE
+    convert_radiance_to_irradiance_map(&amp;cube_map_radiance_target, &amp;cube_map_irradiance_target);
+    cube_map = &amp;cube_map_irradiance_target;
+#endif
+
+    float r[9] = {};
+    float g[9] = {};
+    float b[9] = {};
+    project_cube_map_to_sh(r, g, b, cube_map);
+
+    memcpy(light_probe.r, r, sizeof(r));
+    memcpy(light_probe.g, g, sizeof(g));
+    memcpy(light_probe.b, b, sizeof(b));
+}</code></pre>
+<div>Then to use this in a pixel shader I sample the 8 closest light probes and tri-linearly interpolate in between them to get smooth transitions between light probes.</div>
+<div>I ended up with this as my sampling code:</div>
+<div>
+<pre class="language-cpp"><code>float3 color[8];
+for (int i = 0; i &lt; 8; i++)
+{
+    Light_Probe probe = light_probe_buffer[indices[i]];
+
+    float basis[9];
+    sh_eval_basis_2(dir, basis);
+
+    color[i].r = sh_dot_order3(basis, probe.r);
+    color[i].g = sh_dot_order3(basis, probe.g);
+    color[i].b = sh_dot_order3(basis, probe.b);
+}</code></pre>
+<div>An example of non-interpolated and interpolated:</div>
+<div>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://erichederstedt.dev/media/posts/4/gallery/gi_6.png" data-size="1920x1080"><img loading="lazy" src="https://erichederstedt.dev/media/posts/4/gallery/gi_6-thumbnail.png" alt="" width="720" height="405"></a>
+<figcaption>With Trilinear Interpolation</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://erichederstedt.dev/media/posts/4/gallery/gi_5.png" data-size="1920x1080"><img loading="lazy" src="https://erichederstedt.dev/media/posts/4/gallery/gi_5-thumbnail.png" alt="" width="720" height="405"></a>
+<figcaption>Without Trilinear Interpolation</figcaption>
+</figure>
+</div></div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>TGA Project 7: “Streamer attacked by ALIENS”</title>
+        <author>
+            <name>Eric Hederstedt</name>
+        </author>
+        <link href="https://erichederstedt.dev/tga-project-7-streamer-attacked-by-aliens.html"/>
+        <id>https://erichederstedt.dev/tga-project-7-streamer-attacked-by-aliens.html</id>
+        <media:content url="https://erichederstedt.dev/media/posts/3/p7.jpg" medium="image" />
+
+        <updated>2024-04-26T13:39:28+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://erichederstedt.dev/media/posts/3/p7.jpg" alt="" />
+                    Genre: FPS Zombie-Survival Engine: TEMP Engine(Custom in-house engine) Overview In this project, I continued to expand and enhance the TEMP Engine, our custom in-house engine, to create a FPS Zombie-Survival game with advanced rendering techniques and optimized performance. My key contributions to the project included:&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://erichederstedt.dev/media/posts/3/p7.jpg" class="type:primaryImage" alt="" /></p>
+                <ul>
+<li>Genre: FPS Zombie-Survival</li>
+<li>Engine: TEMP Engine(Custom in-house engine)</li>
+</ul>
+<h4>Overview</h4>
+<p>In this project, I continued to expand and enhance the TEMP Engine, our custom in-house engine, to create a FPS Zombie-Survival game with advanced rendering techniques and optimized performance.</p>
+<p>My key contributions to the project included:</p>
+<ul>
+<li>Architecting and implementing a robust component system to facilitate modular game object composition</li>
+<li>Developing a scene serialization system to efficiently save and load game states</li>
+<li>Implementing a well-threaded Direct3D 12 renderer to leverage modern GPU capabilities and improve rendering performance</li>
+<li>Creating a threaded resource streaming system to optimize memory usage and loading times</li>
+<li>Implementing static global illumination to enhance the visual quality and realism of the game world</li>
+<li>Developing a signed distance field (SDF) text and glyph rendering system for crisp and efficient UI rendering</li>
+</ul>
+<h4>Screenshots</h4>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/3/p7_screenshot1.jpg" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot1-xs.jpg 300w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot1-sm.jpg 480w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot1-md.jpg 768w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot1-lg.jpg 1024w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot1-xl.jpg 1360w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot1-2xl.jpg 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/3/p7_screenshot2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot2-xs.png 300w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot2-sm.png 480w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot2-md.png 768w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot2-lg.png 1024w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot2-xl.png 1360w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot2-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/3/p7_screenshot3.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot3-xs.png 300w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot3-sm.png 480w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot3-md.png 768w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot3-lg.png 1024w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot3-xl.png 1360w ,https://erichederstedt.dev/media/posts/3/responsive/p7_screenshot3-2xl.png 1600w"></figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>TGA Project 6: “Spite: String of Fate”</title>
+        <author>
+            <name>Eric Hederstedt</name>
+        </author>
+        <link href="https://erichederstedt.dev/tga-project-6-spite-string-of-fate.html"/>
+        <id>https://erichederstedt.dev/tga-project-6-spite-string-of-fate.html</id>
+        <media:content url="https://erichederstedt.dev/media/posts/2/p6.png" medium="image" />
+
+        <updated>2024-04-26T13:39:19+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://erichederstedt.dev/media/posts/2/p6.png" alt="" />
+                    In this project, I worked on expanding the capabilities of the TEMP Engine, our custom in-house engine, to develop a top-down action RPG game. My key contributions to the project included: Enhancing the Direct3D 11 renderer Implementing a GPU-based particle system Developing an additive animation&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://erichederstedt.dev/media/posts/2/p6.png" class="type:primaryImage" alt="" /></p>
+                <p><video loading="lazy" width="100%" height="auto" controls="controls"><source src="media/files/Spite Strings Of Fate Trailer.webm" type="video/webm" /></video></p>
+<ul>
+<li>Genre: Top-down action-rpg</li>
+<li>Engine: TEMP Engine(Custom in-house engine)</li>
+</ul>
+<h4>Overview</h4>
+<p>In this project, I worked on expanding the capabilities of the TEMP Engine, our custom in-house engine, to develop a top-down action RPG game.</p>
+<p>My key contributions to the project included:</p>
+<ul>
+<li>Enhancing the Direct3D 11 renderer</li>
+<li>Implementing a GPU-based particle system</li>
+<li>Developing an additive animation system</li>
+</ul>
+<h4>Screenshots</h4>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/2/p6_screenshot1.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot1-xs.png 300w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot1-sm.png 480w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot1-md.png 768w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot1-lg.png 1024w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot1-xl.png 1360w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot1-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/2/p6_screenshot2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot2-xs.png 300w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot2-sm.png 480w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot2-md.png 768w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot2-lg.png 1024w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot2-xl.png 1360w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot2-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/2/p6_screenshot3.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot3-xs.png 300w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot3-sm.png 480w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot3-md.png 768w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot3-lg.png 1024w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot3-xl.png 1360w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot3-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/2/p6_screenshot4.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot4-xs.png 300w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot4-sm.png 480w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot4-md.png 768w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot4-lg.png 1024w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot4-xl.png 1360w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot4-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/2/p6_screenshot5.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot5-xs.png 300w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot5-sm.png 480w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot5-md.png 768w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot5-lg.png 1024w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot5-xl.png 1360w ,https://erichederstedt.dev/media/posts/2/responsive/p6_screenshot5-2xl.png 1600w"></figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>TGA Project 5: “Лаборатория (The Laboratory)”</title>
+        <author>
+            <name>Eric Hederstedt</name>
+        </author>
+        <link href="https://erichederstedt.dev/tga-project-5-laboratoriya-the-laboratory.html"/>
+        <id>https://erichederstedt.dev/tga-project-5-laboratoriya-the-laboratory.html</id>
+        <media:content url="https://erichederstedt.dev/media/posts/1/p5.png" medium="image" />
+
+        <updated>2024-04-26T13:37:24+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://erichederstedt.dev/media/posts/1/p5.png" alt="" />
+                    In this project, I worked with a team to create a grid-based puzzle FPS game using our custom in-house engine, the TEMP Engine. The engine is an extension of a previous engine I had developed during a game jam, which was extensively reworked and improved&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://erichederstedt.dev/media/posts/1/p5.png" class="type:primaryImage" alt="" /></p>
+                <p><video loading="lazy" width="100%" height="auto" controls="controls"><source src="media/files/Tga22 - Stockholm - Game Project 5.webm" type="video/webm" /></video></p>
+<ul>
+<li>Genre: Grid-based puzzle fps</li>
+<li>Engine: TEMP Engine(Custom in-house engine)</li>
+</ul>
+<h4>Overview</h4>
+<p>In this project, I worked with a team to create a grid-based puzzle FPS game using our custom in-house engine, the TEMP Engine. The engine is an extension of a previous engine I had developed during a game jam, which was extensively reworked and improved for this project.</p>
+<p>My contributions to the project included:</p>
+<ul>
+<li>Designing and implementing the overall engine framework</li>
+<li>Developing the renderer</li>
+</ul>
+<h4>Screenshots</h4>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/1/p5_screenshot1-3.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot1-3-xs.png 300w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot1-3-sm.png 480w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot1-3-md.png 768w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot1-3-lg.png 1024w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot1-3-xl.png 1360w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot1-3-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/1/p5_screenshot2-2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot2-2-xs.png 300w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot2-2-sm.png 480w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot2-2-md.png 768w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot2-2-lg.png 1024w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot2-2-xl.png 1360w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot2-2-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/1/p5_screenshot3-2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot3-2-xs.png 300w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot3-2-sm.png 480w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot3-2-md.png 768w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot3-2-lg.png 1024w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot3-2-xl.png 1360w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot3-2-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/1/p5_screenshot4-2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot4-2-xs.png 300w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot4-2-sm.png 480w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot4-2-md.png 768w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot4-2-lg.png 1024w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot4-2-xl.png 1360w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot4-2-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://erichederstedt.dev/media/posts/1/p5_screenshot5-2.png" alt="" width="1920" height="1080" sizes="100vw" srcset="https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot5-2-xs.png 300w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot5-2-sm.png 480w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot5-2-md.png 768w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot5-2-lg.png 1024w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot5-2-xl.png 1360w ,https://erichederstedt.dev/media/posts/1/responsive/p5_screenshot5-2-2xl.png 1600w"></figure>
+            ]]>
+        </content>
+    </entry>
+</feed>
